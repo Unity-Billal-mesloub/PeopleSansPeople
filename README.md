@@ -66,7 +66,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2112.09290" style="font-size: 25px; text-decoration: none">Paper</a>
   &nbsp; &nbsp;
-   <a href="https://github.com/Unity-Technologies/PeopleSansPeople/tree/main/peoplesanspeople_binaries" style="font-size: 25px; text-decoration: none">macOS and Linux Binaries</a>
+   <a href="https://github.com/Unity-Billal-mesloub/PeopleSansPeople/tree/main/peoplesanspeople_binaries" style="font-size: 25px; text-decoration: none">macOS and Linux Binaries</a>
   &nbsp; &nbsp;
   <a href="https://youtu.be/mQ_DUdB70dc" style="font-size: 25px; text-decoration: none">Demo Video</a>
 </p>
@@ -108,7 +108,7 @@ Additionally, privacy, legal, safety, and ethical concerns may limit the ability
 An emerging alternative to real-world data that alleviates some of these issues is synthetic data. 
 However, creation of synthetic data generators is incredibly challenging and prevents researchers from exploring their usefulness.
 Therefore, we release a human-centric synthetic data generator PeopleSansPeople which contains simulation-ready 3D human assets, a parameterized lighting and camera system, and generates 2D and 3D bounding box, instance and semantic segmentation, and COCO pose labels. 
-Using PeopleSansPeople, we performed benchmark synthetic data training using a <a href="https://github.com/facebookresearch/detectron2">Detectron2 Keypont R-CNN variant</a>. 
+Using PeopleSansPeople, we performed benchmark synthetic data training using a <a href="https://github.com/Unity-Billal-mesloub/detectron2">Detectron2 Keypont R-CNN variant</a>. 
 We found that pre-training a network using synthetic data and fine-tuning on target real-world data (few-shot transfer to limited subsets of <a href="https://cocodataset.org/#home">COCO-person train</a>) resulted in a keypoint AP of <strong>60.37 ± 0.48</strong> (COCO test-dev2017) outperforming models trained with the same real data alone (keypoint AP of <strong>55.80</strong>) and pre-trained with ImageNet (keypoint AP of <strong>57.50</strong>).
 This freely-available data generator should enable a wide range of research into the emerging field of simulation to real transfer learning in the critical area of human-centric computer vision.</em>
 </details>
@@ -128,7 +128,7 @@ A comparison between our benchmark generated data with PeopleSansPeople and the 
 
 ## Generated Data and Labels
 PeopleSansPeople produces the following types of labels in COCO format: 2D bounding box, human keypoints, semantic and instance segmentation masks.
-In addition PeopleSansPeople generates 3D bounding boxes which are provided in [Unity's Perception](<https://github.com/Unity-Technologies/com.unity.perception>) format.
+In addition PeopleSansPeople generates 3D bounding boxes which are provided in [Unity's Perception](<https://github.com/Unity-Billal-mesloub/com.unity.perception>) format.
 <p align="center">
   <img src="./images/label_fig/1.png" width="20%" />
   &nbsp; &nbsp;
@@ -139,7 +139,7 @@ In addition PeopleSansPeople generates 3D bounding boxes which are provided in [
   <img src="./images/label_fig/4.png" width="20%" />
   <br>
   Generated image and corresponding labels: 2D bounding box, human keypoints, semantic and instance segmentation masks in COCO format. 
-  3D bounding box annotations are provided separately in <a href="https://github.com/Unity-Technologies/com.unity.perception">Unity Perception</a> format.
+  3D bounding box annotations are provided separately in <a href="https://github.com/Unity-Billal-mesloub/com.unity.perception">Unity Perception</a> format.
 </p>
 
 ## Benchmark Results
@@ -260,9 +260,9 @@ over training from scratch and pre-training with ImageNet. For each dataset size
 ```
 
 ## Source code
-Unity Environment Template [here](<https://github.com/Unity-Technologies/PeopleSansPeople/tree/main/peoplesanspeople_unity_env>)
+Unity Environment Template [here](<https://github.com/Unity-Billal-mesloub/PeopleSansPeople/tree/main/peoplesanspeople_unity_env>)
 
-macOS and Linux binaries [here](<https://github.com/Unity-Technologies/PeopleSansPeople/tree/main/peoplesanspeople_binaries>)
+macOS and Linux binaries [here](<https://github.com/Unity-Billal-mesloub/PeopleSansPeople/tree/main/peoplesanspeople_binaries>)
 
 
 ## Related links
@@ -272,13 +272,13 @@ macOS and Linux binaries [here](<https://github.com/Unity-Technologies/PeopleSan
 - [Watch our Keynote at AI @ Scale 2022](https://youtu.be/xZlDyBdeF2I?si=zzxU7J8SmMOiBmeU)
 - [Check out HumanDataset: World's most popular 3D human datasets to create ground truth synthtic data for computer vision research and simulation](https://humandataset.com/)
 - [Unity's Blog Post on Human-Centric Computer Vision with Unity Synthetic Data](https://blog.unity.com/technology/human-centric-computer-vision-with-unity-synthetic-data)
-- [Unity's Perception Package](https://github.com/Unity-Technologies/com.unity.perception)
+- [Unity's Perception Package](https://github.com/Unity-Billal-mesloub/com.unity.perception)
 - [Unity Computer Vision](https://unity.com/products/computer-vision)
-- [Unity's Perception Tutorial](https://github.com/Unity-Technologies/com.unity.perception/blob/master/com.unity.perception/Documentation~/Tutorial/TUTORIAL.md)
-- [Unity's Human Pose Labeling and Randomization Tutorial](https://github.com/Unity-Technologies/com.unity.perception/blob/main/com.unity.perception/Documentation~/HumanPose/TUTORIAL.md)
-- [Drone Pose Estimation and Navigation with Unity Project](https://github.com/Unity-Technologies/drone-pose-estimation-navigation)
-- [SynthDet Project](https://github.com/Unity-Technologies/SynthDet)
-- [Robotics Object Pose Estimation Demo](https://github.com/Unity-Technologies/Robotics-Object-Pose-Estimation)
+- [Unity's Perception Tutorial](https://github.com/Unity-Billal-mesloub/com.unity.perception/blob/main/com.unity.perception/Documentation~/Tutorial/TUTORIAL.md)
+- [Unity's Human Pose Labeling and Randomization Tutorial](https://github.com/Unity-Billal-mesloub/com.unity.perception/blob/main/com.unity.perception/Documentation~/HumanPose/TUTORIAL.md)
+- [Drone Pose Estimation and Navigation with Unity Project](https://github.com/Unity-Billal-mesloub/drone-pose-estimation-navigation)
+- [SynthDet Project](https://github.com/Unity-Billal-mesloub/SynthDet)
+- [Robotics Object Pose Estimation Demo](https://github.com/Unity-Billal-mesloub/Robotics-Object-Pose-Estimation)
 
 
 ## PeopleSansPeople in the press
@@ -287,5 +287,3 @@ macOS and Linux binaries [here](<https://github.com/Unity-Technologies/PeopleSan
 - [WIRED: Gaming Giant Unity Wants to Digitally Clone the World](https://www.wired.com/story/gaming-giant-unity-wants-to-digitally-clone-the-world/)
 
 
-## License
-PeopleSansPeople is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE.md) for the full license text.
